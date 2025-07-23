@@ -57,6 +57,13 @@ print(tp.index(12)) # print it index where first time it occure
 
 
 
+
+
+
+
+
+
+
 # Create a tuple with 5 elements and unpack it into 5 variables. Print the variables.
 
 # packing
@@ -86,6 +93,8 @@ tpl_to_lst = list(tpl)
 tpl_to_lst.append(100) #appending new element after converting into list
 
 print(tpl_to_lst)
+
+
 
 # again covert the list into tuple
 new_tpl = tuple(tpl_to_lst)
