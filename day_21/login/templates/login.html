@@ -1,0 +1,19 @@
+ {% extends "layout.html" %}
+
+ {% block title %} Login page {%endblock%}
+
+ {% block content%}
+ <h1>Hello world welcome to login page</h1>
+    <form action="/authenticate" method="POST">
+        <div>
+            <p>Username:</p>
+            <input type="text" name='username' placeholder="username">
+        </div>
+        <div>
+            <p>Password:</p>
+            <input type="password" name='password'>
+        </div>
+        <input type="submit" value="Login">
+    </form>
+
+{% endblock %}
