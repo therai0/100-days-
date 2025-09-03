@@ -1,0 +1,13 @@
+prefix=/Volumes/Demo/100-days-/day_46/env
+exec_prefix=/Volumes/Demo/100-days-/day_46/env
+libdir=/Volumes/Demo/100-days-/day_46/env/lib
+sharedlibdir=/Volumes/Demo/100-days-/day_46/env/lib
+includedir=/Volumes/Demo/100-days-/day_46/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
