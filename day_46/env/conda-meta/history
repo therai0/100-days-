@@ -168,3 +168,11 @@
 # conda version: 25.5.1
 +defaults/osx-arm64::matplotlib-3.10.5-py312hca03da5_0
 # update specs: ['matplotlib']
+==> 2025-09-05 22:46:49 <==
+# cmd: /opt/miniconda3/bin/conda install scikit-learn
+# conda version: 25.5.1
++defaults/osx-arm64::joblib-1.5.1-py312hca03da5_0
++defaults/osx-arm64::scikit-learn-1.7.1-py312h6e33161_0
++defaults/osx-arm64::scipy-1.16.0-py312h224531d_1
++defaults/osx-arm64::threadpoolctl-3.5.0-py312h989b03a_0
+# update specs: ['scikit-learn']
