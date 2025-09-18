@@ -29,7 +29,7 @@ def predict_data():
         #    scaling the input value 
         new_scaled_data = standard_scaler.transform([[RH,Ws,Rain,FFMC,DMC,ISI,Classes,Region]])
         result = elasticnetcv_model.predict(new_scaled_data)
-        return render_template('home.html',results=result[0])
+        return render_template('home.html',results=int(result[0]))
     else:
         return render_template('home.html')
 
