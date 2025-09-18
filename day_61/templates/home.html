@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Prediction</h1>
+    <h2> Weather Data</h2>
+    
+   <form action="{{url_for('predict_data')}}" method="POST" class="form-grid">
+  <div class="form-group">
+    <label>Relative Humidity (RH %):</label>
+    <input type="number" name="RH" min="21" max="90" step="0.1" required>
+  </div>
+
+  <div class="form-group">
+    <label>Wind Speed (Ws km/h):</label>
+    <input type="number" name="Ws" min="6" max="29" step="0.1" required>
+  </div>
+
+  <div class="form-group">
+    <label>Rain (mm):</label>
+    <input type="number" name="Rain" min="0" max="16.8" step="0.1" required>
+  </div>
+
+  <div class="form-group">
+    <label>Fine Fuel Moisture Code (FFMC):</label>
+    <input type="number" name="FFMC" min="28.6" max="92.5" step="0.1" required>
+  </div>
+
+  <div class="form-group">
+    <label>Duff Moisture Code (DMC):</label>
+    <input type="number" name="DMC" min="1.1" max="65.9" step="0.1" required>
+  </div>
+
+  <div class="form-group">
+    <label>Initial Spread Index (ISI):</label>
+    <input type="number" name="ISI" min="0" max="18.5" step="0.1" required>
+  </div>
+
+  <div class="form-group">
+    <label>Classes:</label>
+    <input type="number" name="Classes" min="0" max="1" step="1" required>
+  </div>
+
+  <div class="form-group">
+    <label>Region:</label>
+    <input type="number" name="Region" min="0" max="1" step="1" required>
+  </div>
+
+  <button type="submit">Predict</button>
+</form>
+
+
+    <p class="result">The temperature prediction {{results}} degree Celsius</p>
+  </div>
+</body>
+</html>
