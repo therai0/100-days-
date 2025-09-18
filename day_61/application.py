@@ -5,7 +5,8 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import pickle
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 
 # let's import the our model (scalar standar and ElasticnetCV)
